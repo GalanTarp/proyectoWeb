@@ -1,0 +1,48 @@
+.logo{
+    width: 64px;
+}
+.borderverde{
+    border-color: #04cc74;
+}
+.bgverde{
+    background-color: #04cc74;
+}
+.textverde{
+    color: #04cc74;
+}
+.h100{
+    height: 100px;
+}
+
+
+
+
+.rating {
+    font-size: 0 ;
+    display: inline-block ;
+}
+.rating a {
+    text-decoration: none ;
+    display: inline-block ;
+    font-size: 32px ;
+    font-size: 2rem ;    
+    color: #888 ;
+}
+.rating:hover a {
+    color: gold ;
+}
+.rating > a:hover ~ a {
+    color: #888 ;
+}
+
+.rating2 {
+    font-size: 0 ;
+    display: inline-block ;
+}
+.rating2 a {
+    text-decoration: none ;
+    display: inline-block ;
+    font-size: 32px ;
+    font-size: 2rem ;    
+    color: #888 ;
+}

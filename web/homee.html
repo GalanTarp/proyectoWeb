@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/mycss.css">
+</head>
+
+<body>
+    <div class="container shadow px-0">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <img class="navbar-brand logo" src="img/logotmdb.png" />
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Person <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Movie</a>
+                    </li>
+                </ul>
+                <form class="row ml-auto" action="Controller?op=login" method="POST">
+                    <div class="col">
+                        <input type="text" class="form-control" name="dni" placeholder="DNI">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" name="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="col">
+                        <button type="submit" class="btn bg-dark borderverde text-white">Login/Register</button>
+                    </div>
+                </form>
+            </div>
+        </nav>
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-5 col-lg-4">
+                <div class="card m-2">
+                    <img src="img/logotmdb.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <span class="rating2 d-flex justify-content-center">
+                            <a class="disabled">&#9733;</a>
+                            <a class="disabled">&#9733;</a>
+                            <a class="disabled">&#9733;</a>
+                        </span>
+                        <h5 class="card-title d-flex justify-content-center">Card title</h5>
+                        <span class="rating d-flex justify-content-center">
+                            <a href="Controller?op=rating&rating=1">&#9733;</a>
+                            <a href="Controller?op=rating&rating=2">&#9733;</a>
+                            <a href="Controller?op=rating&rating=3">&#9733;</a>
+                            <a href="Controller?op=rating&rating=4">&#9733;</a>
+                            <a href="Controller?op=rating&rating=5">&#9733;</a>
+                        </span>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-center">
+                            <button class="btn bgverde text-white" data-toggle="modal"
+                                data-target="#modalpeliculas">Filmografia</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-5">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="img/logotmdb.png" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Card title</h3>
+                                <h5 class="card-text">Tefwfwefw</h5>
+                                <p class="card-text">his is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <h1 class="d-flex justify-content-center align-middle bg-dark textverde h100">The MovieDB - Azarquiel 2020
+            </h1>
+        </footer>
+
+        
+        <!-- Modal -->
+        <div class="modal fade" id="modalpeliculas" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                    </div>
+                    <div class="modal-body">
+                        Body
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="js/myjs.js"></script>
+
+</body>
+
+</html>
